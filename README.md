@@ -1,2 +1,2 @@
 # proyecto1_biodiversidad
-semana 1
+proyecto inicial 
