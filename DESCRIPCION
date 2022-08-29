@@ -27,7 +27,4 @@ PROPUESTA SOLUCION requerimiento 1 y 2
 
 "En la simulacion del estado inicial del cuadrante, las plantas tienen la misma probabilidad de ocurrencia
 que el agua.
-La probabilidad de ocurrencia de una bacteria es el doble que de las plantas."(sacado de: https://ucampus.uaysen.cl/uaysen/2022/2/IF1003/1/tareas/r/202208291008BC0064A99342B54C__DesafioI.pdf)
-
-por lo que determine que la relacion de plantas y agua: 4/16 y el de las bacterias: 8/16. aplicando esta relacion en el programa para las variables deberia lograr
-representar las 16 variables con sus respectivas relaciones en porcentaje.
+La probabilidad de ocurrencia de una bacteria es el doble que de las plantas.
