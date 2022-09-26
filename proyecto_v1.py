@@ -250,40 +250,75 @@ print("------------------")
 
 print("existen", bacteria, "elementos de bacteria, existen", planta, "elementos de planta, existen", agua, "elementos de agua" )
 
-total = (bacteria + planta + agua)
 
-porcentajeB = (bacteria * 100) / total
-porcentajeP = (planta * 100) / total
-porcentajeA = (agua * 100) / total
-print ("el porcentaje de ocurrencia de las bacterias es ", porcentajeB,"%, el porcentaje de ocurrencia de las plantas es ", porcentajeP, "% y el porcentaje de ocurrencia del agua es de ", porcentajeA, "%")
+porcentajeB = (bacteria*100)/16
+porcentajeP = (planta*100)/16
+porcentajeA = (agua*100)/16
+print("el porcentaje de bacterias es de", porcentajeB, "%, el porcentaje de plantas es de", porcentajeP, "%, el porcentaje de agua es de", porcentajeA, "%" )
+
 if bacteria == planta:
     print("la ocurrencia de las bacterias y las plantas han empatado")
+    if bacteria and planta > agua:
+        print("las bacterias y las plantas tienen mayor ocurrencia, mientras que el agua tiene la menor ocurrencia")
+    else:
+        if bacteria and planta < agua:
+            print("el agua tienen mayor ocurrencia mientras que las bacterias y las plantas tienen la menor ocurrencia")
 else:
+
     if planta == agua:
         print("la ocurrencia de las plantas y el agua han empatado")
+        if planta and agua > bacteria:
+            print("las plantas y el agua tienen mayor ocurrencia mientras que las bacterias tienen la menor ocurrencia")
+        else:
+            if planta and agua < bacteria:
+                print("las bacterias tienen mayor ocurrencia mientras que las plantas y el agua tienen la menor ocurrencia")
+
     else:
         if bacteria == agua:
             print("la ocurrencia de las bacterias y el agua han empatado")
+            if bacteria and agua > planta:
+                print("las bacterias y el agua tienen mayor ocurrencia mientras que las plantas tienen la menor ocurrencia")
+
+
+if bacteria > planta > agua:
+    print("las bacterias tienen mayor ocurrencia, mientras que el agua tiene la menor ocurrencia")
+else:
+    if planta > bacteria > agua:
+        print("las plantas tienen mayor ocurrencia mientras que el agua tiene la menor ocurrencia")
+    else:
+        if bacteria > agua > planta:
+            print("las bacterias tienen mayor ocurrencia mientras que las plantas tienen la menor ocurrencia")
         else:
-            if bacteria > planta > agua:
-                print("las bacterias tienen mayor ocurrencia, mientras que el agua tiene la menor ocurrencia")
+            if planta > agua > bacteria:
+                 print("las plantas tienen mayor ocurrencia mientras que las bacterias tiene la menor ocurrencia")
             else:
-                if planta > bacteria > agua:
-                    print("las plantas tienen mayor ocurrencia mientras que el agua tiene la menor ocurrencia")
+                if agua > planta > bacteria:
+                    print("el agua tienen mayor ocurrencia mientras que las bacterias tiene la menor ocurrencia")
                 else:
-                    if bacteria > agua > planta:
-                        print("las bacterias tienen mayor ocurrencia mientras que las plantas tienen la menor ocurrencia")
-                    else:
-                        if planta > agua > bacteria:
-                            print("las plantas tienen mayor ocurrencia mientras que las bacterias tiene la menor ocurrencia")
-                        else:
-                            if agua > planta > bacteria:
-                                print("el agua tienen mayor ocurrencia mientras que las bacterias tiene la menor ocurrencia")
-                            else:
-                                if agua > bacteria > planta:
-                                    print("el agua tienen mayor ocurrencia mientras que las plantas tiene la menor ocurrencia")
+                    if agua > bacteria > planta:
+                        print("el agua tienen mayor ocurrencia mientras que las plantas tiene la menor ocurrencia")
 
 
-    
+if variable1 == "b" and variable2 == "b"and variable3 == "b"and variable5 == "b"and variable7 == "b"and variable9 == "b"and variable10 == "b"and variable11 == "b" and variable6 == "p":
+    print("planta se encuentra bajo ataque de bacterias")
+else:
+    if variable2 == "b"and variable3== "b" and variable4== "b" and variable6== "b" and variable8== "b" and variable10== "b" and variable11== "b" and variable12== "b" and variable7 == "p":
+        print("planta se encuentra bajo ataque de bacterias")
+    else:
+        if variable5== "b" and variable6== "b" and variable7== "b" and variable9== "b" and variable11== "b" and variable13== "b" and variable14== "b" and variable15 == "b" and variable10 == "p":
+            print("planta se encuentra bajo ataque de bacterias")
+        else:
+            if variable6== "b" and variable7== "b" and variable8== "b" and variable10== "b" and variable12== "b" and variable14== "b" and variable15== "b"and variable16 == "b" and variable11 == "p":
+                print("planta se encuentra bajo ataque de bacterias")
 
-
+if variable1=="p" and variable2 =="p"and variable3 =="p"and variable5=="p" and variable7=="p" and variable9=="p" and variable10=="p" and variable11 =="p" and variable6 == "a":
+    print("escases de agua")
+else:
+    if variable2=="p" and variable3=="p" and variable4=="p" and variable6=="p" and variable8=="p" and variable10=="p" and variable11=="p" and variable12=="p" and variable7 == "a":
+        print("escases de agua")
+    else:
+        if variable5=="p" and variable6=="p" and variable7=="p" and variable9=="p" and variable11=="p" and variable13=="p" and variable14=="p" and variable15=="p" and variable10 == "a":
+            print("escases de agua")
+        else:
+            if variable6=="p" and variable7=="p" and variable8=="p" and variable10=="p" and variable12=="p" and variable14=="p" and variable15=="p" and variable16 =="p" and variable11 == "a":
+                print("escases de agua")
