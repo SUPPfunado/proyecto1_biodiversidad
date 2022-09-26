@@ -258,27 +258,29 @@ print("el porcentaje de bacterias es de", porcentajeB, "%, el porcentaje de plan
 
 if bacteria == planta:
     print("la ocurrencia de las bacterias y las plantas han empatado")
-    if bacteria and planta > agua:
+    if bacteria>agua and planta > agua:
         print("las bacterias y las plantas tienen mayor ocurrencia, mientras que el agua tiene la menor ocurrencia")
     else:
-        if bacteria and planta < agua:
+        if bacteria<agua and planta < agua:
             print("el agua tienen mayor ocurrencia mientras que las bacterias y las plantas tienen la menor ocurrencia")
 else:
 
     if planta == agua:
         print("la ocurrencia de las plantas y el agua han empatado")
-        if planta and agua > bacteria:
+        if planta>bacteria and agua > bacteria:
             print("las plantas y el agua tienen mayor ocurrencia mientras que las bacterias tienen la menor ocurrencia")
         else:
-            if planta and agua < bacteria:
+            if planta<bacteria and agua < bacteria:
                 print("las bacterias tienen mayor ocurrencia mientras que las plantas y el agua tienen la menor ocurrencia")
 
     else:
         if bacteria == agua:
             print("la ocurrencia de las bacterias y el agua han empatado")
-            if bacteria and agua > planta:
+            if bacteria>planta and agua > planta:
                 print("las bacterias y el agua tienen mayor ocurrencia mientras que las plantas tienen la menor ocurrencia")
-
+            else:
+                if bacteria<planta and agua < planta:
+                    print("las plantas tienen mayor ocurrencia mientras que las bacterias y el agua tienen la menor ocurrencia")
 
 if bacteria > planta > agua:
     print("las bacterias tienen mayor ocurrencia, mientras que el agua tiene la menor ocurrencia")
@@ -322,3 +324,4 @@ else:
         else:
             if variable6=="p" and variable7=="p" and variable8=="p" and variable10=="p" and variable12=="p" and variable14=="p" and variable15=="p" and variable16 =="p" and variable11 == "a":
                 print("escases de agua")
+
